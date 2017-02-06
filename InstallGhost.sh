@@ -43,7 +43,7 @@ echo "Configuring Nginx"
 echo "server {" >> /etc/nginx/sites-available/ghost
 echo "    listen 80;" >> /etc/nginx/sites-available/ghost
 echo "    server_name $HOSTNAME;" >> /etc/nginx/sites-available/ghost
-echo "    location / {" >> /etc/nginx/conf.d/ghost.conf
+echo "    location / {" >> /etc/nginx/sites-available/ghost
 echo "        proxy_set_header   X-Real-IP \$remote_addr;" >> /etc/nginx/sites-available/ghost
 echo "        proxy_set_header   Host      \$http_host;" >> /etc/nginx/sites-available/ghost
 echo "        proxy_pass         http://127.0.0.1:2368;" >> /etc/nginx/sites-available/ghost

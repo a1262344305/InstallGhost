@@ -21,7 +21,7 @@ apt-get install -y curl unzip vim wget screen
 
 # Download the latest version of Ghost
 cd /home
-wget http://sosososo.oss-cn-beijing.aliyuncs.com/software/ghost-latest.zip
+wget https://cdn.bayun.org/software/ghost-latest.zip
 unzip -d ghost ghost-latest.zip
 rm -rf ghost-latest.zip
 cd ghost

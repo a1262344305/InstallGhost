@@ -28,7 +28,7 @@ cd ghost
 sed -e "s/my-ghost-blog.com/$HOSTNAME/" <config.example.js >config.js
 
 # Use cnpm instead of npm
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install -y nodejs
 apt-get install -y npm
 ln -s /usr/bin/nodejs /usr/bin/node
